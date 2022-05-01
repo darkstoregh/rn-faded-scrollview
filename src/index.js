@@ -51,7 +51,7 @@ class RNFadedScrollView extends Component {
 
     //To avoid ScrollView RTL issue on andorid.
     allowReverse() {
-        return Platform.OS == 'android' && this.props.isRtl
+        return Platform.OS === 'android' && this.props.isRtl
     }
     onScrolled = (e) => {
         if (this.props.isCloseToEnd) {
